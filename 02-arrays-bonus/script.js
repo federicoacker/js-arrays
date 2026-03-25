@@ -28,7 +28,11 @@ for(let i = 0; i < teachers.length; i++){
 }
 
 // 3. Rimuovi 'Ed' dall'array teachers
-
+const indexOfEd = teachers.indexOf("Ed"); // variabile per segnarci la posizione e fare poi il controllo 
+// per vedere che Ed sia effettivamente nell'array
+if(indexOfEd !== -1){ // Controllo che Ed sia presente, se il risultato è -1 devo ignorare lo splice perché altrimenti mi cancella l'ultimo elemento.
+  teachers.splice(indexOfEd, 1);
+}
 // 4. Verifica se 'Fabio' è presente nell'array teachers
 // e salva il risultato nella variabile isFabioPresent
 const isFabioPresent = null;
